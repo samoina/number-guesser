@@ -1,25 +1,28 @@
-let correctNumber = 78;
-
 let submitBtn = document.getElementById('submit-button');
-
-
 submitBtn.addEventListener('click', checkNumber);
 
-function checkNumber(ev){
+const correctNumber = Math.floor((Math.random() * 100)+1);
+console.log(correctNumber);
+
+function checkNumber(ev) {
 	let userGuess = document.getElementById('my-guess').value;
-	if(userGuess=== ''){
+	if (userGuess === '') {
 		alert('Please enter a number')
-	} else if(userGuess<1 || userGuess>100 ) {
+	} else if (userGuess < 1 || userGuess > 100) {
 		alert('Enter a valid number between 1 and 100')
 	} else {
 		let userNumber = parseInt(userGuess);
-		if (userNumber !== correctNumber){
+			if (userNumber !== correctNumber) {
 			alert('Not quite. Try again!')
-		}	else {
-				alert('You got that right!')
-			}
+		} else {
+			alert('You got that right!')
 		}
+	}
 
 
 	ev.preventDefault()
 }
+
+
+
+
