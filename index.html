@@ -8,7 +8,7 @@
   <title>Number Guessing Game</title>
 </head>
 <body>
-  <div class="container">
+  <!-- <div class="container">
     <h1>Let's play a Number Guessing Game</h1>
     <p>I am thinking of a number that's between <span class="min-num">1</span> and <span class="max-num">100</span>. Make a guess and i will let you know if it is too high or too low.</p>
     <div id="guess">
@@ -17,6 +17,16 @@
       <br>
       <input class="btn btn-info" id="submit-button" type="submit" value="Check My Guess">
     </div>
+  </div> -->
+
+  <h1>Guess the Number</h1>
+  <p>We have selected a random number between 1 - 10. 
+    See if you can guess it.</p>
+
+  <div class="form">
+    <label for="guessField">Enter a guess</label>
+    <input type="number" name="guessField" id="guessField">
+    <input type="submit" value="Submit guess" id="submitguess" >
   </div>
   
   <script src="app.js"></script>
